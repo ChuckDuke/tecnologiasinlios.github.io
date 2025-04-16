@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>{title}</title>
+    <title>Contacto – Tecnología Sin Líos</title>
     <style>
         body {
             font-family: 'Inter', sans-serif;
@@ -40,7 +40,7 @@
     </style>
 </head>
 <body>
-    <img src="https://i.imgur.com/EIbYpxe.png" alt="Tecnología Sin Líos Logo" />
+    <img src="{logo}" alt="Tecnología Sin Líos Logo" />
     <nav>
         <a href="index.html">Inicio</a>
         <a href="newsletter.html">Newsletter</a>
@@ -48,7 +48,31 @@
         <a href="contacto.html">Contacto</a>
     </nav>
     <main>
-        {content}
+        
+<h1>Contacto</h1>
+<p>¿Tienes dudas? ¿Quieres sugerir un tema o simplemente saludar?</p>
+<p>Escríbeme o usa el formulario a continuación:</p>
+
+<form action="https://formsubmit.co/hola@tecnologiasinlios.com" method="POST">
+  <label for="name">Tu nombre:</label><br>
+  <input type="text" id="name" name="name" required style="width:100%; padding:8px; margin:8px 0;"><br>
+
+  <label for="email">Tu email:</label><br>
+  <input type="email" id="email" name="email" required style="width:100%; padding:8px; margin:8px 0;"><br>
+
+  <label for="message">Tu mensaje:</label><br>
+  <textarea id="message" name="message" rows="5" required style="width:100%; padding:8px; margin:8px 0;"></textarea><br>
+
+  <!-- Anti-spam -->
+  <input type="text" name="_honey" style="display:none">
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_next" value="https://tecnologiasinlios.github.io/contacto.html?enviado=true">
+
+  <button type="submit" style="background-color:#2D9CDB; color:#fff; padding:10px 20px; border:none; cursor:pointer;">
+    Enviar mensaje
+  </button>
+</form>
+
     </main>
 </body>
 </html>
