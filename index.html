@@ -4,28 +4,35 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
     <title>Inicio – Tecnología Sin Líos</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="manifest" href="manifest.json">
     <style>
         body {
             font-family: 'Inter', sans-serif;
             background-color: #F9FAFB;
             color: #1F2937;
+            max-width: 100%;
+            margin: 0;
+            padding: 1rem;
+            line-height: 1.7;
+        }
+        .container {
             max-width: 760px;
             margin: 0 auto;
-            padding: 2rem;
-            line-height: 1.7;
         }
         nav {
             background: #F9FAFB;
             padding: 1rem;
             border-bottom: 1px solid #E5E7EB;
             text-align: center;
+            flex-wrap: wrap;
         }
         nav a {
-            margin: 0 15px;
+            margin: 0.5rem 1rem;
             text-decoration: none;
             color: #2D9CDB;
+            display: inline-block;
         }
         nav a:hover {
             color: #1B75BB;
@@ -34,30 +41,68 @@
             color: #1F2937;
         }
         img {
-            max-width: 450px;
+            max-width: 100%;
+            height: auto;
             display: block;
             margin: 1rem auto;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #D1D5DB;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+        button {
+            background-color: #2D9CDB;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #1B75BB;
+        }
+        footer {
+            text-align:center;
+            margin-top: 3rem;
+            padding-top: 1rem;
+            border-top: 1px solid #E5E7EB;
+            font-size: 0.9rem;
+            color: #6B7280;
         }
     </style>
 </head>
 <body>
-    <img src="img/logo-transparente.png" alt="Tecnología Sin Líos Logo" />
-    <nav>
-        <a href="index.html">Inicio</a>
-        <a href="newsletter.html">Newsletter</a>
-        <a href="sobre-mi.html">Sobre mí</a>
-        <a href="contacto.html">Contacto</a>
-    </nav>
-    <main>
-        
+    <div class="container">
+        <img src="img/logo-transparente.png" alt="Tecnología Sin Líos Logo" />
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="newsletter.html">Newsletter</a>
+            <a href="sobre-mi.html">Sobre mí</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+        <main>
+            
+            <h1>Bienvenido a Tecnología Sin Líos</h1>
+            <p>Aprende a usar la tecnología sin tecnicismos, sin miedo y sin complicarte la vida.</p>
+            <p>Aquí encontrarás consejos, tutoriales y herramientas pensadas para todas aquellas personas que quiera sacar partido a su móvil, su ordenador o internet sin volverse locas.</p>
+            <p><a href="newsletter.html">Suscríbete aquí</a> y empieza a recibir ayuda real, clara y útil.</p>
 
+<footer style="text-align:center; margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #E5E7EB; font-size: 0.9rem; color: #6B7280;">
+  <p>© 2025 Tecnología Sin Líos</p>
+  <p><a href="mailto:hola@tecnologiasinlios.com">hola@tecnologiasinlios.com</a> · <a href="privacidad.html">Política de Privacidad (RGPD)</a></p>
+</footer>
 
-        
-<h1>Bienvenido a Tecnología Sin Líos</h1>
-<p>Aprende a usar la tecnología sin tecnicismos, sin miedo y sin complicarte la vida.</p>
-<p>Aquí encontrarás consejos, tutoriales y herramientas pensadas para todas aquellas personas que quiera sacar partido a su móvil, su ordenador o internet sin volverse locas.</p>
-<p><a href="newsletter.html">Suscríbete aquí</a> y empieza a recibir ayuda real, clara y útil.</p>
-
-    </main>
+        </main>
+    </div>
 </body>
 </html>

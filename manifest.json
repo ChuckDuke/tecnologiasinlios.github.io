@@ -1,0 +1,15 @@
+{
+  "name": "Tecnolog\u00eda Sin L\u00edos",
+  "short_name": "Sin L\u00edos",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#F9FAFB",
+  "theme_color": "#2D9CDB",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "48x48 64x64 128x128 256x256",
+      "type": "image/x-icon"
+    }
+  ]
+}

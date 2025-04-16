@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://tecnologiasinlios.github.io/sitemap.xml
